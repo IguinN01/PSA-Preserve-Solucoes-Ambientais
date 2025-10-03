@@ -1,0 +1,153 @@
+.section {
+  padding: 5rem 0;
+  background: var(--gradient-destaque);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px hsl(160 20% 45% / 0.2);
+}
+
+.popularCard {
+  background: var(--psa-verde);
+  color: var(--texto-psa-verde);
+  border: 2px solid var(--psa-verde);
+}
+
+.ribbon {
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--psa-escuro);
+  color: var(--texto-psa-escuro);
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.card h3 {
+  font-size: 1.875rem;
+  margin: 1rem 0 .5rem;
+  color: var(--texto);
+}
+
+.card h3.titlePopular {
+  color: var(--fundo);
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+}
+
+.popularCard .features li {
+  color: var(--texto-psa-verde);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  min-height: 16px;
+  padding: 4px;
+  border-radius: 50%;
+  background: hsl(140 55% 55% / 0.15);
+}
+
+.iconPopular {
+  background: hsl(0 0% 100% / 0.25);
+}
+
+.iconCheck {
+  color: var(--psa-verde);
+}
+
+.iconCheckPopular {
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--raio);
+  background: var(--botao);
+  color: white;
+  box-shadow: var(--shadow-button);
+  transition: var(--transition-smooth);
+  margin-top: auto;
+}
+
+.button:hover {
+  background: hsl(160, 40%, 25%);
+}
+
+.buttonPopular {
+  background: white;
+  color: var(--psa-verde);
+}
+
+.buttonPopular:hover {
+  background: hsl(0 0% 95%);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer p {
+  font-size: 0.9375rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: var(--texto-suave);
+}

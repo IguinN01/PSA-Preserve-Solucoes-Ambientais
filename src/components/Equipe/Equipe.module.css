@@ -1,0 +1,79 @@
+.teamSection {
+  padding: 5rem 0;
+  background: var(--gradient-destaque);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--cartao);
+  border-radius: var(--raio);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid var(--borda);
+}
+
+.card:hover {
+  box-shadow: 0 6px 24px hsl(160 20% 45% / 0.15);
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  margin-bottom: 1rem;
+}
+
+.iconWrapper {
+  width: 4rem;
+  height: 4rem;
+  background: hsl(160 40% 25% / 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--anel);
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--texto);
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  background: hsl(160 40% 25% / 0.15);
+  color: var(--primario);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.cardContent {
+  margin-top: 1rem;
+}
+
+.description {
+  line-height: 1;
+  color: var(--texto-suave);
+}

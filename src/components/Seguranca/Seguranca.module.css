@@ -1,0 +1,119 @@
+.section {
+  padding: 5rem 0;
+  background: var(--gradient-destaque);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timelineWrapper {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 0;
+  background: var(--borda);
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stepNumber {
+  width: 4rem;
+  height: 4rem;
+  background: var(--psa-verde);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: var(--texto-psa-verde);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stepIcon {
+  width: 3rem;
+  height: 3rem;
+  background: hsla(140, 55%, 55%, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.iconSvg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--psa-verde);
+}
+
+.stepTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--texto);
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.cardsGrid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card, 0 4px 20px hsla(160, 20%, 45%, 0.08));
+}
+
+.procedures {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.procedureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.checkIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--psa-verde);
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.procedureText {
+  color: var(--texto-suave);
+  line-height: 1.6;
+}

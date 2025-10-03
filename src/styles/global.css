@@ -1,0 +1,45 @@
+:root {
+  --gradient-hero: linear-gradient(135deg, hsl(160 60% 15%), hsl(160 40% 25%));
+  --gradient-destaque: linear-gradient(to top, #f8f8f8, #f5f5f5, #ffffff);
+
+  --botao: hsl(160, 40%, 30%);
+
+  --fundo: hsl(0, 0%, 100%);
+  --texto: hsl(160, 60%, 15%);
+
+  --cartao: hsl(0, 0%, 100%);
+  --texto-cartao: hsl(160, 60%, 15%);
+
+  --popover: hsl(0, 0%, 100%);
+  --texto-popover: hsl(160, 60%, 15%);
+
+  --primario: hsl(160, 40%, 25%);
+  --texto-primario: hsl(0, 0%, 100%);
+
+  --psa-verde: hsl(140, 55%, 55%);
+  --texto-psa-verde: hsl(0, 0%, 100%);
+
+  --psa-escuro: hsl(160, 60%, 15%);
+  --texto-psa-escuro: hsl(0, 0%, 100%);
+
+  --secundario: hsl(210, 20%, 96%);
+  --texto-secundario: hsl(160, 40%, 25%);
+
+  --suave: hsl(210, 20%, 95%);
+  --texto-suave: hsl(160, 20%, 45%);
+
+  --destaque: hsl(140, 55%, 55%);
+  --texto-destaque: hsl(0, 0%, 100%);
+
+  --perigo: hsl(0, 84.2%, 60.2%);
+  --texto-perigo: hsl(0, 0%, 100%);
+
+  --borda: hsl(160, 15%, 88%);
+  --input: hsl(160, 15%, 88%);
+  --anel: hsl(140, 55%, 55%);
+
+  --raio: 0.5rem;
+
+  --transition-smooth: all .3s cubic-bezier(.4, 0, .2, 1);
+  --transition-fast: all .2s ease-out;
+}

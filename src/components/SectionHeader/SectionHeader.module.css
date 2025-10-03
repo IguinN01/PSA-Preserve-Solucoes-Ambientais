@@ -1,0 +1,27 @@
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: var(--psa-escuro);
+}
+
+.divider {
+  width: 6rem;
+  height: 4px;
+  background: var(--anel);
+  margin: 0 auto 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  color: var(--texto-suave);
+}

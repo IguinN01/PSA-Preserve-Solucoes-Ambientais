@@ -1,0 +1,178 @@
+.section {
+  padding: 5rem 0;
+  background: var(--gradient-destaque);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.block {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: var(--psa-escuro);
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 3rem;
+  color: var(--psa-escuro);
+}
+
+.separator {
+  width: 6rem;
+  height: 0.25rem;
+  background: var(--psa-verde);
+  border-radius: var(--raio);
+  margin: 0 auto 1.5rem auto;
+}
+
+.clientsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  opacity: 0.6;
+}
+
+.clientItem {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  color: var(--psa-escuro);
+}
+
+.certificationBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--suave);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.certificationIcon {
+  width: 3rem;
+  height: 3rem;
+  background: var(--psa-verde);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto-psa-verde);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.certTitle {
+  font-weight: 600;
+  color: var(--psa-escuro);
+}
+
+.certSubtitle {
+  font-size: 0.875rem;
+  color: var(--texto-suave);
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: var(--cartao);
+  border-radius: var(--raio);
+  box-shadow: var(--shadow-card);
+  padding: 2rem 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.quoteWrapper {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quoteCircle {
+  width: 2rem;
+  height: 2rem;
+  background: var(--psa-verde);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quoteIcon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--texto-psa-verde);
+}
+
+.testimonialContent {
+  padding-top: 1.5rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.star {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: var(--psa-verde);
+  border-radius: 50%;
+  margin-right: 0.25rem;
+}
+
+.text {
+  font-style: italic;
+  color: var(--texto-suave);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.author {
+  font-weight: 600;
+  color: var(--psa-escuro);
+}
+
+.company {
+  font-size: 0.875rem;
+  color: var(--texto-suave);
+}
+
+.paragraph {
+  color: var(--texto-suave);
+  margin-bottom: 2rem;
+}
+
+.brandsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  opacity: 0.6;
+}
+
+.brandItem {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--psa-escuro);
+}
