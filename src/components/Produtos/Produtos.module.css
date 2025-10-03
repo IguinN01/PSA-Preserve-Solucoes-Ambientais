@@ -14,7 +14,7 @@
   gap: 1.5rem;
 }
 
-.grid > * {
+.grid>* {
   max-width: 382px;
   justify-self: center;
 }
@@ -92,4 +92,21 @@
 .cardDescription {
   color: var(--texto-suave);
   line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+  }
+
+  .grid > :nth-child(4),
+  .grid > :nth-child(5) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .grid > :nth-child(5) {
+    grid-column: 1 / -1;
+  }
 }

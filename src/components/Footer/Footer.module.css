@@ -184,3 +184,9 @@
   font-size: 0.875rem;
   color: hsl(0 0% 100% / 0.6);
 }
+
+@media (max-width: 1024px) {
+  .main, .bottom {
+    padding-inline: 1.5rem;
+  }
+}

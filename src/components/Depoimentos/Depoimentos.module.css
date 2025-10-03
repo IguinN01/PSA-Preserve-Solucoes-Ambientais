@@ -176,3 +176,9 @@
   font-weight: bold;
   color: var(--psa-escuro);
 }
+
+@media (max-width: 1024px) {
+  .testimonialGrid {
+    padding-inline: 1.5rem;
+  }
+}

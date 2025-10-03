@@ -117,3 +117,9 @@
   color: var(--texto-suave);
   line-height: 1.6;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}

@@ -77,3 +77,9 @@
   line-height: 1;
   color: var(--texto-suave);
 }
+
+@media (max-width: 1024px) {
+  .grid {
+    padding-inline: 1.5rem;
+  }
+}

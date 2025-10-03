@@ -174,3 +174,9 @@ select:focus {
   line-height: 1.6;
   max-width: 350px;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}
