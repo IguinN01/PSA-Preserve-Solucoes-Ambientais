@@ -83,3 +83,14 @@
     padding-inline: 1.5rem;
   }
 }
+
+@media (max-width: 820px) {
+  .card {
+    width: 38vw;
+    justify-self: center;
+  }
+
+  .grid> :nth-child(3) {
+    grid-column: 1 / -1;
+  }
+}

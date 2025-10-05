@@ -122,7 +122,7 @@ const Contact = () => {
                 <a href={linkWhatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${styles.button} button_ajuste`}>
+                  className={styles.button}>
                   Agendar Visita
                 </a>
               </div>

@@ -10,15 +10,29 @@ const Cabecalho = () => {
     setMenuAberto(!menuAberto);
   };
 
+  const handleLinkClick = (e, anchor) => {
+    e.preventDefault();
+    const target = document.querySelector(anchor);
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    if (menuAberto) {
+      toggleMenu();
+    }
+  };
+
   const telefone = "5511942957858";
   const mensagemPadrao = "Olá! Gostaria de mais informações sobre a Preserve Soluções Ambientais.";
   const linkWhatsapp = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagemPadrao)}`;
 
   return (
-    <header className={styles.cabecalho}>
+    <header className={`${styles.cabecalho} ${menuAberto ? styles.menuAberto : ''}`}>
       <nav className={styles.nav}>
         <div className={styles.logo}>
-          <a href="#home" className={styles.logo}>
+          <a href="#home" className={styles.logo} onClick={(e) => handleLinkClick(e, '#home')}>
             <div className={styles.logoIcone}>
               <Leaf className={styles.iconeFolha} />
             </div>
@@ -33,18 +47,18 @@ const Cabecalho = () => {
 
         <div className={styles.menuDesktop}>
           <div className={styles.opcoes}>
-            <a className={styles.remover_1024} href="#servicos">Serviços</a>
-            <a href="#sobre-nos">Sobre Nós</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#planos">Planos</a>
-            <a href="#clientes">Depoimentos</a>
-            <a href="#seguranca">Segurança</a>
+            <a className={styles.remover_1024} href="#servicos" onClick={(e) => handleLinkClick(e, '#servicos')}>Serviços</a>
+            <a href="#sobre-nos" onClick={(e) => handleLinkClick(e, '#sobre-nos')}>Sobre Nós</a>
+            <a href="#produtos" onClick={(e) => handleLinkClick(e, '#produtos')}>Produtos</a>
+            <a href="#planos" onClick={(e) => handleLinkClick(e, '#planos')}>Planos</a>
+            <a href="#clientes" onClick={(e) => handleLinkClick(e, '#clientes')}>Depoimentos</a>
+            <a href="#seguranca" onClick={(e) => handleLinkClick(e, '#seguranca')}>Segurança</a>
           </div>
         </div>
 
         <div className={styles.botoes}>
           <a
-            className={styles.botaoContato}
+            className={`${styles.botaoContato} ${styles.remover_820}`}
             href={linkWhatsapp}
             target="_blank"
             rel="noopener noreferrer"
@@ -54,31 +68,30 @@ const Cabecalho = () => {
         </div>
 
         <div className={styles.menuHamburguer} onClick={toggleMenu}>
-          {menuAberto ? <X /> : <Menu />}
+          <div className={`${styles.iconeMenu} ${menuAberto ? styles.aberto : ''}`}>
+            {menuAberto ? <X size={32} /> : <Menu size={32} />}
+          </div>
         </div>
 
-        {menuAberto && (
-          <div className={styles.menuMobile}>
-            <div className={styles.opcoesMobile}>
-              <a href="#servicos" onClick={toggleMenu}>Serviços</a>
-              <a href="#sobre-nos" onClick={toggleMenu}>Sobre Nós</a>
-              <a href="#produtos" onClick={toggleMenu}>Produtos</a>
-              <a href="#planos" onClick={toggleMenu}>Planos</a>
-              <a href="#clientes" onClick={toggleMenu}>Depoimentos</a>
-              <a href="#seguranca" onClick={toggleMenu}>Segurança</a>
-              <a
-                className={styles.botaoContato}
-                href={linkWhatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Contato
-              </a>
-            </div>
+        <div className={`${styles.menuMobile} ${menuAberto ? styles.aberto : ''}`}>
+          <div className={`${styles.opcoesMobile} ${styles.opcoes}`}>
+            <a href="#servicos" onClick={(e) => handleLinkClick(e, '#servicos')}>Serviços</a>
+            <a href="#sobre-nos" onClick={(e) => handleLinkClick(e, '#sobre-nos')}>Sobre Nós</a>
+            <a href="#produtos" onClick={(e) => handleLinkClick(e, '#produtos')}>Produtos</a>
+            <a href="#planos" onClick={(e) => handleLinkClick(e, '#planos')}>Planos</a>
+            <a href="#clientes" onClick={(e) => handleLinkClick(e, '#clientes')}>Depoimentos</a>
+            <a href="#seguranca" onClick={(e) => handleLinkClick(e, '#seguranca')}>Segurança</a>
+            <a
+              href={linkWhatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contato
+            </a>
           </div>
-        )}
+        </div>
       </nav>
-    </header>
+    </header >
   );
 };
 

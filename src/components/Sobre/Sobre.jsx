@@ -4,6 +4,18 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import styles from "./Sobre.module.css";
 
 const Sobre = () => {
+  // Adicione esta função
+  const handleLinkClick = (e, anchor) => {
+    e.preventDefault();
+    const target = document.querySelector(anchor);
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section id="sobre-nos" className={styles.aboutSection}>
       <div className={styles.container}>
@@ -28,7 +40,10 @@ const Sobre = () => {
             </div>
 
             <div className={styles.buttonWrapper}>
-              <a href="#equipe" className={styles.button}>Conheça Nossa Equipe</a>
+              {/* Modifique esta linha */}
+              <a href="#equipe" className={styles.button} onClick={(e) => handleLinkClick(e, '#equipe')}>
+                Conheça Nossa Equipe
+              </a>
             </div>
           </div>
 
