@@ -116,3 +116,9 @@
     grid-template-columns: repeat(1, auto);
   }
 }
+
+@media (max-width: 390px) {
+  .productsSection {
+    padding-inline: 1rem;
+  }
+}

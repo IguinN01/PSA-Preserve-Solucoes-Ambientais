@@ -2,7 +2,7 @@ import React, { Suspense, useState, useEffect } from "react";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
-import Loader from "../components/Loader/Loader"; // Importe o Loader aqui
+import Loader from "../components/Loader/Loader";
 
 const Servicos = React.lazy(() => import("../components/Servicos/Servicos"));
 const Sobre = React.lazy(() => import("../components/Sobre/Sobre"));
@@ -17,10 +17,9 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Esconde o loader após um pequeno intervalo para garantir que a renderização inicial seja concluída.
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // Você pode ajustar este tempo se necessário.
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);

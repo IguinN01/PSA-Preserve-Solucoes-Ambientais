@@ -170,7 +170,18 @@
 
   .carrosselPlanos {
     top: 0px;
-    margin-block: 34px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 430px) {
+  .section {
+    padding-inline: 1rem;
+  }
+
+  .card {
+    margin: 0.7rem;
   }
 }
 

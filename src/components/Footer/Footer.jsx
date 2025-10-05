@@ -54,17 +54,6 @@ const Footer = () => {
             </div>
 
             <div>
-              <h4 className={styles.sectionTitle}>Links Rápidos</h4>
-              <ul className={styles.links}>
-                <li><a href="#home" className={styles.link}>Home</a></li>
-                <li><a href="#services" className={styles.link}>Serviços</a></li>
-                <li><a href="#about" className={styles.link}>Sobre Nós</a></li>
-                <li><a href="#plans" className={styles.link}>Planos</a></li>
-                <li><a href="#contact" className={styles.link}>Contato</a></li>
-              </ul>
-            </div>
-
-            <div>
               <h4 className={styles.sectionTitle}>Contato</h4>
               <div className={styles.contactList}>
                 <div className={styles.contactItem}>

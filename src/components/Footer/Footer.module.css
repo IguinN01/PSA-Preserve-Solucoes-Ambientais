@@ -16,11 +16,7 @@
 .grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr;
-}
-
-.grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .colSpan2 {
@@ -107,24 +103,6 @@
   color: var(--fundo);
 }
 
-.links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.link {
-  display: block;
-  color: hsl(0 0% 100% / 0.7);
-  text-decoration: none;
-  margin-bottom: 0.75rem;
-  transition: var(--transition-smooth);
-}
-
-.link:hover {
-  color: var(--psa-verde);
-}
-
 .contactList {
   display: flex;
   flex-direction: column;
@@ -164,20 +142,17 @@
 }
 
 .containerBottom {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   text-align: center;
-}
-
-.containerBottom {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 1rem;
 }
 
 .copy {
@@ -186,7 +161,19 @@
 }
 
 @media (max-width: 1024px) {
-  .main, .bottom {
+
+  .main,
+  .bottom {
     padding-inline: 1.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .containerBottom {
+    flex-direction: column;
   }
 }

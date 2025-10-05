@@ -147,6 +147,33 @@
   }
 }
 
+@media (max-width: 820px) {
+  .clientsGrid {
+    gap: 0rem;
+  }
+
+  .clientItem {
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    margin-top: 2rem;
+  }
+
+  .carrosselDepoimentos {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  :global(.slick-slide > div) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 :global(.slick-dots) {
   display: flex !important;
   justify-content: center;

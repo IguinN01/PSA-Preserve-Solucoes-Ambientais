@@ -28,7 +28,7 @@ const Services = () => {
     slidesToScroll: 1,
     arrows: false,
     initialSlide: 1,
-    centerMode: true,
+    centerMode: false,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -44,15 +44,17 @@ const Services = () => {
         {isMobile ? (
           <Slider {...carouselSettings}>
             {services.map((service, index) => (
-              <div>
-                <div key={index} className={styles.serviceCard}>
+              <div key={index} className={styles.carrosselServicos}>
+                <div className={styles.serviceCard}>
                   <div className={styles.iconWrapper}>
                     <service.icon
                       className={`${styles.icon} ${styles[service.color]}`}
                     />
                   </div>
                   <h3 className={styles.cardTitle}>{service.title}</h3>
-                  <p className={styles.cardDescription}>{service.description}</p>
+                  <p className={styles.cardDescription}>
+                    {service.description}
+                  </p>
                   <p className={styles.cardDetails}>{service.details}</p>
                 </div>
               </div>
@@ -86,7 +88,7 @@ const Services = () => {
                   <feature.icon className={styles.featureIcon} />
                 </div>
                 <h4 className={styles.featureTitle}>{feature.title}</h4>
-                <p className={styles.featureDesc}>{feature.desc}</p>
+                <p className={styles.featureDesc}>{feature.description}</p>
               </div>
             ))}
           </div>

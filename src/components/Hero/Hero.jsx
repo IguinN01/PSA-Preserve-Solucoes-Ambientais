@@ -23,7 +23,7 @@ const Hero = () => {
       <div className={styles.content}>
         <div className={styles.textWrapper}>
           <h1 className={styles.title}>
-            Soluções Profissionais em <br/>
+            <span className={styles.h1title}>Soluções Profissionais em</span><br/>
             <span className={styles.highlight}>Controle de Pragas</span>
           </h1>
 
