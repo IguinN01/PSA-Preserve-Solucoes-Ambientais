@@ -29,7 +29,7 @@ const Footer = () => {
 
               <div className={styles.socials}>
                 <a
-                  href="https://wa.me/5511942957858"
+                  href="https://wa.me/5511921002606"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
@@ -58,7 +58,7 @@ const Footer = () => {
               <div className={styles.contactList}>
                 <div className={styles.contactItem}>
                   <Phone className={styles.contactIcon} />
-                  <span className={styles.textMuted}>(11) 3912-7815 / (11) 9224-7589</span>
+                  <span className={styles.textMuted}>(11) 92100-2606</span>
                 </div>
                 <div className={styles.contactItem}>
                   <Mail className={styles.contactIcon} />
@@ -85,7 +85,7 @@ const Footer = () => {
             © {currentYear} PSA - Preserve Soluções Ambientais. Todos os direitos reservados.
           </div>
           <div className={styles.copy}>
-            CNPJ: XX.XXX.XXX/XXXX-XX
+            CNPJ: 64.356.898/0001-18
           </div>
         </div>
       </div>

@@ -4,9 +4,21 @@ import heroImageWebP from "/imgs/hero-bg.webp";
 import heroImageJpg from "/imgs/hero-bg.jpg";
 
 const Hero = () => {
-  const telefone = "5511942957858";
+  const telefone = "5511921002606";
   const mensagemPadrao = "Olá! Gostaria de agendar uma visita com vocês.";
   const linkWhatsapp = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagemPadrao)}`;
+
+  // Função para scroll suave
+  const handleLinkClick = (e, anchor) => {
+    e.preventDefault();
+    const target = document.querySelector(anchor);
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
 
   return (
     <section id="home" className={styles.hero}>
@@ -19,11 +31,10 @@ const Hero = () => {
         <div className={styles.overlay}></div>
       </div>
 
-
       <div className={styles.content}>
         <div className={styles.textWrapper}>
           <h1 className={styles.title}>
-            <span className={styles.h1title}>Soluções Profissionais em</span><br/>
+            <span className={styles.h1title}>Soluções Profissionais em</span><br />
             <span className={styles.highlight}>Controle de Pragas</span>
           </h1>
 
@@ -33,7 +44,12 @@ const Hero = () => {
           </p>
 
           <div className={styles.buttons}>
-            <a href="#contato" className={`${styles.btn} ${styles.btnPrimary}`}>
+            {/* Adicionado o onClick para scroll suave */}
+            <a
+              href="#contato"
+              className={`${styles.btn} ${styles.btnPrimary}`}
+              onClick={(e) => handleLinkClick(e, '#contato')}
+            >
               Solicitar Orçamento
             </a>
             <a href={linkWhatsapp}

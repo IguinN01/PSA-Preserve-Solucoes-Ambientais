@@ -24,7 +24,7 @@ const Cabecalho = () => {
     }
   };
 
-  const telefone = "5511942957858";
+  const telefone = "5511921002606";
   const mensagemPadrao = "Olá! Gostaria de mais informações sobre a Preserve Soluções Ambientais.";
   const linkWhatsapp = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagemPadrao)}`;
 

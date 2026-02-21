@@ -1,4 +1,4 @@
-export const telefone = "5511942957858";
+export const telefone = "5511921002606";
 
 export const plans = [
   {

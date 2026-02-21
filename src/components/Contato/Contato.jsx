@@ -16,7 +16,7 @@ const Contact = () => {
 
   const [clientError, setClientError] = useState('');
 
-  const telefoneapp = "5511942957858";
+  const telefoneapp = "5511921002606";
   const mensagemPadrao = "Olá! Gostaria de agendar uma visita com vocês.";
   const linkWhatsapp = `https://wa.me/${telefoneapp}?text=${encodeURIComponent(mensagemPadrao)}`;
 
@@ -84,7 +84,7 @@ const Contact = () => {
                   <div className={styles.iconWrapper}><Phone className={styles.icon} /></div>
                   <div>
                     <div className={styles.infoLabel}>Telefone</div>
-                    <div className={styles.infoText}>(11) 3912-7815 / (11) 9224-7589</div>
+                    <div className={styles.infoText}>(11) 92100-2606</div>
                   </div>
                 </div>
 
@@ -234,7 +234,7 @@ const Contact = () => {
                 <div className={styles.iconWrapper}><Phone className={styles.icon} /></div>
                 <div>
                   <div className={styles.infoLabel}>Telefone</div>
-                  <div className={styles.infoText}>(11) 3912-7815 / (11) 9224-7589</div>
+                  <div className={styles.infoText}>(11) 92100-2606</div>
                 </div>
               </div>
 
