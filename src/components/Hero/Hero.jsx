@@ -62,7 +62,7 @@ const Hero = () => {
 
           <div className={styles.stats}>
             <div className={styles.statItem}>
-              <div className={styles.statNumber}>+10</div>
+              <div className={styles.statNumber}>+8</div>
               <div className={styles.statText}>Anos de Experiência</div>
             </div>
             <div className={styles.statItem}>

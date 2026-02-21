@@ -50,7 +50,7 @@ const Sobre = () => {
           <div className={styles.statsFeatures}>
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
-                <div className={styles.statNumber}>+10</div>
+                <div className={styles.statNumber}>+8</div>
                 <div className={styles.statLabel}>Anos no Mercado</div>
               </div>
               <div className={styles.statCard}>
