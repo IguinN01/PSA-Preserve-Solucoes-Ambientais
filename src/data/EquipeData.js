@@ -9,13 +9,6 @@ export const teamMembers = [
     experience: "+17 Anos",
   },
   {
-    name: "Rita Ferrari",
-    description:
-      "Bacharel em farmácia e técnica responsável em controle de pragas",
-    icon: PillBottle,
-    experience: "Farmacêutica",
-  },
-  {
     name: "Luiz Vinicius",
     description:
       "Possui mais de 10 anos de experiência no controle de pragas urbanas e higienização de Reservatórios",
