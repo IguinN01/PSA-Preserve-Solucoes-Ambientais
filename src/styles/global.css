@@ -1,0 +1,126 @@
+:root {
+  --gradient-hero: linear-gradient(135deg, hsl(145 60% 12%), hsl(145 40% 22%));
+  --gradient-destaque: linear-gradient(to top, #f8fafc, #f1f5f9, #ffffff);
+
+  --primario: hsl(145, 40%, 25%);
+  --texto-primario-orig: hsl(0, 0%, 100%);
+
+  --botao: hsl(145, 45%, 30%);
+
+  --texto: hsl(145, 60%, 12%);
+  --texto-mutado: hsl(145, 15%, 40%);
+
+  --fundo: hsl(0, 0%, 100%);
+  --cartao: hsl(0, 0%, 100%);
+  --texto-cartao: hsl(145, 60%, 12%);
+
+  --psa-verde: hsl(140, 55%, 55%);
+  --psa-escuro: hsl(145, 60%, 15%);
+
+  --secundario: hsl(145, 10%, 97%);
+  --texto-secundario: hsl(145, 40%, 25%);
+
+  --suave: hsl(145, 10%, 95%);
+  --texto-suave: hsl(145, 20%, 45%);
+
+  --destaque: hsl(140, 55%, 55%);
+  --perigo: hsl(0, 84.2%, 60.2%);
+  --borda: hsl(145, 15%, 88%);
+  --anel: hsl(140, 55%, 55%);
+
+  --raio: 0.5rem;
+
+  --psa-primario-novo: #1a4d2e;
+  --psa-primario-hover: #143d24;
+  --psa-destaque-novo: #34d399;
+  --psa-destaque-hover: #10b981;
+  --psa-claro: #d1fae5;
+  --psa-bg-suave: #ecfdf5;
+  --fundo-primario: #ffffff;
+  --fundo-secundario: #f9fafb;
+  --texto-primario: #1e293b;
+  --texto-inverso: #ffffff;
+
+  --transition-smooth: all .3s cubic-bezier(.4, 0, .2, 1);
+  --transition-fast: all .2s ease-out;
+}
+
+:focus-visible {
+  outline: 3px solid var(--psa-destaque-novo);
+  outline-offset: 3px;
+  border-radius: 2px;
+  transition: outline-offset 0.2s ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  border-radius: inherit;
+}
+
+.glass-effect {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-effect-dark {
+  background-color: rgba(20, 54, 34, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@keyframes jellyHover {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  30% {
+    transform: scale(1.05, 0.95);
+  }
+
+  40% {
+    transform: scale(0.95, 1.05);
+  }
+
+  50% {
+    transform: scale(1.02, 0.98);
+  }
+
+  65% {
+    transform: scale(0.99, 1.01);
+  }
+
+  75% {
+    transform: scale(1.01, 0.99);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.hover-gelatina {
+  transition: var(--transition-smooth);
+  will-change: transform;
+}
+
+.hover-gelatina:hover {
+  animation: jellyHover 0.8s ease-out both;
+}
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

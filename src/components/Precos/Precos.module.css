@@ -1,0 +1,273 @@
+.section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1152px;
+  margin: 3rem auto 0;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.cardStandard {
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.cardStandard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cardPopular {
+  background-color: #059669;
+  color: #ffffff;
+  border: 2px solid #059669;
+  box-shadow: 0 20px 25px -5px rgba(5, 150, 105, 0.2), 0 10px 10px -5px rgba(5, 150, 105, 0.1);
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.cardPopular:hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+.ribbon {
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #064e3b;
+  color: #ffffff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.cardTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+
+.cardTitleStandard {
+  color: #022c22;
+}
+
+.cardTitlePopular {
+  color: #ffffff;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  min-height: 16px;
+  padding: 4px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.iconStandard {
+  background-color: #d1fae5;
+}
+
+.iconPopular {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.iconCheckStandard {
+  color: #059669;
+}
+
+.iconCheckPopular {
+  color: #ffffff;
+}
+
+.featureTextStandard {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.featureTextPopular {
+  color: #ecfdf5;
+  font-size: 0.95rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.buttonStandard {
+  background-color: #047857;
+  color: #ffffff;
+}
+
+.buttonStandard:hover {
+  background-color: #065f46;
+}
+
+.buttonPopular {
+  background-color: #ffffff;
+  color: #059669;
+}
+
+.buttonPopular:hover {
+  background-color: #f3f4f6;
+}
+
+.footerBox {
+  margin-top: 4rem;
+  text-align: center;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: #6b7280;
+  font-size: 0.9375rem;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footerBox p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footerHighlight {
+  font-weight: 600;
+  color: #065f46;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .grid {
+    display: none;
+  }
+
+  .card {
+    max-width: 412px;
+    margin: 0 auto;
+  }
+
+  .cardPopular,
+  .cardPopular:hover {
+    transform: none;
+  }
+
+  .carrosselPlanos {
+    top: 0px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 490px) {
+  .section {
+    padding-inline: 1rem;
+  }
+
+  .card {
+    margin: 0.7rem;
+  }
+}
+
+:global(.slick-dots) {
+  display: flex !important;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+:global(.slick-dots li) {
+  margin: 10px 10px;
+}
+
+:global(.slick-dots li button) {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+:global(.slick-dots li button:before) {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+:global(.slick-dots li.slick-active button:before) {
+  background: #059669;
+}

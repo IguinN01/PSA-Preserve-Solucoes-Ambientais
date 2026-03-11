@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.loader-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--psa-primario-novo);
+  z-index: 9999;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loader-container.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-icon {
+  width: 64px;
+  height: 64px;
+  color: var(--psa-destaque-novo);
+  margin-bottom: 1rem;
+  animation: smoothBounce 1.5s ease-in-out infinite;
+}
+
+.loader-text-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+  color: var(--psa-claro);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+}
+
+.loader-dots-container {
+  display: flex;
+  padding-bottom: 0.25rem;
+  gap: 0.25rem;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--psa-destaque-novo);
+  border-radius: 50%;
+  animation: smoothTyping 1.4s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes smoothBounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes smoothTyping {
+
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+
+  30% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
